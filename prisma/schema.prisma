@@ -16,7 +16,9 @@ model Pet {
   especie String
   idade  Int
   dono   String
-  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
   // Adiciona a anotação para forçar o nome da tabela ser 'pets'
   @@map("pets")
 }
