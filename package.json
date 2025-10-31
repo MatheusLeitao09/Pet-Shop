@@ -1,5 +1,5 @@
 {
-  "name": "banco-dados",
+  "name": "Pet-Shop",
   "version": "1.0.0",
   "main": "server.js",
   "type": "module",
@@ -8,6 +8,9 @@
     "dev": "cls && nodemon server.js",
     "studio": "npx prisma studio",
     "seed": "npx prisma db seed"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
   },
   "keywords": [],
   "author": "Matheus Gomes Leitão",

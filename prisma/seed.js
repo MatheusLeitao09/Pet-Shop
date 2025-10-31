@@ -64,7 +64,7 @@ async function main() {
   console.log("Registros existentes de Pet deletados.");
 
   
-  const result = await prisma.petshop_db.createMany({
+  const result = await prisma.pet.createMany({
     data: dadosPets, 
     skipDuplicates: true,
   });
